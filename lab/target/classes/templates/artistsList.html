@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Artist</title>
+</head>
+<body>
+<h2>Select an artist to add to the song:</h2>
+<form action="/songDetails" method="post">
+  <input type="hidden" name="trackId" value="${trackId}">
+
+  <div>
+    <input type="radio" name="artistId" value="${artist.id}" /> ${artist.firstName} ${artist.lastName} <br/>
+  </div>
+
+  <input type="submit" value="Add Artist">
+</form>
+</body>
+</html>
